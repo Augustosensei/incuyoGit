@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="text text-primary">Listar Persona</h3>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button routerLink="/listar" class="btn btn-primary">Volver</button>
+        </div>
+    </div>
+
+
+
+    <div class="row mt-3 ">
+        <div class="col">
+
+            <form [formGroup]="formulario" (ngSubmit)="operar()">
+                <div class="col-sm-12 col-md-6">
+                    <div hidden=true class="form-group">
+                        <input type="text" class="form-control" formControlName="id">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ingrese Nombre" formControlName="nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ingrese Apellido" formControlName="apellido">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button routerLink="/listar" type="button" class="btn btn-danger">Cancelar</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+</div>
